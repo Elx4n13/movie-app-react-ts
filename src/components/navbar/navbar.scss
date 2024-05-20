@@ -1,0 +1,248 @@
+@keyframes animate {
+
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+
+  70%,
+  90% {
+    width: 100%;
+  }
+}
+.rightNavSide{
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .icon {
+    width: 149px;
+
+    img {
+      width: 100%
+    }
+  }
+
+  .hamburgerIcon {
+    display: none;
+  }
+
+  .menu {
+    width: 84%;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none;
+      background-color: #0F0F0F;
+      border: 3px solid #1F1F1F;
+      padding: 8px 15px;
+      width: 100%;
+      align-items: center;
+
+      li {
+        padding: 6px 8px;
+        width: fit-content;
+        font-size: 16px;
+        text-align: center;
+
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
+    }
+  }
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.activeTheme {
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+.MuiBox-root {
+  svg {
+    transition: 0.4s all;
+    position: absolute;
+  }
+}
+
+.base-MenuButton-root {
+  color: white !important;
+  background-color: #008494 !important;
+  border-radius: 5px !important;
+  height: 42px;
+  font-size: 15px !important;
+  border: 0 !important;
+}
+
+.base-Popup-root {
+  z-index: 10000;
+  width: 170px !important;
+  min-width: 50px !important;
+  top: -11px !important;
+  left: 0 !important;
+  position: fixed !important;
+
+  ul {
+    border-radius: 5px !important;
+    width: 100% !important;
+    min-width: auto;
+    overflow-x: hidden;
+    background-color: #008594f0;
+
+    li {
+      min-width: auto;
+      overflow-x: hidden;
+
+      &:hover {
+        background-color: #00545e !important;
+        color: white !important;
+      }
+    }
+  }
+}
+
+
+.navbar-light {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 7px 10px, rgba(0, 0, 0, 0.05) 0px 5px 4px;
+}
+
+.searchBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+}
+
+.menuSearchBox {
+  display: none;
+  width: 70%;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+}
+
+.menuSearchBoxActive {
+  display: block !important;
+}
+
+
+
+@media screen and (max-width: 1100px) {
+
+  .navbar {
+    width: 100%;
+
+    .icon {
+      width: 149px;
+    }
+
+    .menu {
+      width: 83%;
+
+      ul {
+        padding: 8px 15px;
+        width: 100%;
+
+        li {
+          padding: 6px 8px;
+          font-size: 14px;
+
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .menuSearchBox {
+    display: none;
+  }
+  
+  
+
+  .navbar {
+    width: 100%;
+
+    .hamburgerIcon {
+      display: block!important;
+      z-index: 10000!important;
+      margin-left: 50px;
+    }
+    .hamburgerIconActive{
+      position: fixed;
+      top: 20px;
+    }
+
+    .icon {
+      width: 149px;
+    }
+
+    .menu {
+      width: 100%;
+
+      ul {
+        padding: 0;
+        width: 100%;
+
+        li {
+          padding: 6px 8px;
+          font-size: 14px;
+
+        }
+      }
+    }
+    .menuSearchBox {
+      display: none;
+      position: fixed;
+      right: 0;
+      top: 0;
+      height: 100vh;
+      width: 100%;
+      flex-direction: column;
+      background-color: black;
+      z-index: 9999;
+      justify-content: flex-start;
+      .searchBox{
+        display: flex;
+        flex-direction: column-reverse;
+        .searchContainer{
+          margin-top: 50px;
+        }
+      }
+      .menu{
+        display: flex;
+        flex-direction: column;
+        ul{
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          width: 100%;
+          li{
+            padding: 20px;
+          }
+        }
+      }
+      
+    }
+    .menuSearchBoxActive {
+      display: flex !important;
+    }
+  }
+}

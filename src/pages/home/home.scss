@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+.homeContainer {
+    color: white;
+    margin-top: 50px;
+
+    .movies {
+        margin-top: 100px;
+        border: 1px solid #262626;
+        position: relative;
+        padding: 50px;
+
+        .content-title {
+            background-color: #E50000;
+            padding: 10px 24px;
+            border-radius: 8px;
+            width: fit-content;
+            font-family: Manrope;
+            font-weight: 600;
+            font-size: 20px;
+            position: absolute;
+            top: -25px;
+        }
+    }
+
+    .shows {
+        margin-top: 100px;
+        border: 1px solid #262626;
+        position: relative;
+        padding: 50px;
+
+        .content-title {
+            background-color: #E50000;
+            padding: 10px 24px;
+            border-radius: 8px;
+            width: fit-content;
+            font-family: Manrope;
+            font-weight: 600;
+            font-size: 20px;
+            position: absolute;
+            top: -25px;
+        }
+    }
+
+    .trail {
+        background-image: url(../../assets/backImg.png);
+        width: 100%;
+        padding: 100px 80px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 100px;
+        font-family: Manrope;
+        border-radius: 5px;
+
+        .left {
+            .left-top {
+                font-weight: 700;
+                font-size: 38px;
+                color: white;
+            }
+
+            .left-bottom {
+                margin-top: 10px;
+                font-weight: 400;
+                font-size: 18px;
+                color: #999;
+            }
+        }
+
+        .right {
+            button {
+                padding: 15px 21px;
+                background-color: #E50000;
+                border-radius: 8px;
+                outline: none;
+                border: none;
+                color: white;
+                font-weight: 600;
+                font-size: 16px;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #cf0a0a;
+                }
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width:700px) {
+    .homeContainer {
+        color: white;
+        margin-top: 50px;
+
+        .trail {
+            background-image: url(../../assets/backImg.png);
+            width: 100%;
+            padding: 30px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 100px;
+            font-family: Manrope;
+            border-radius: 5px;
+            flex-direction: column;
+            padding-bottom: 100px;
+            text-align: center;
+
+            .left {
+                .left-top {
+                    font-weight: 700;
+                    font-size: 25px;
+                    color: white;
+                }
+
+                .left-bottom {
+                    margin-top: 10px;
+                    font-weight: 400;
+                    font-size: 13px;
+                    color: #999;
+                }
+            }
+
+            .right {
+                button {
+                    padding: 15px 21px;
+                    background-color: #E50000;
+                    border-radius: 8px;
+                    outline: none;
+                    border: none;
+                    color: white;
+                    font-weight: 600;
+                    font-size: 12px;
+                    margin-top: 40px;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #cf0a0a;
+                    }
+                }
+            }
+        }
+
+    }
+}

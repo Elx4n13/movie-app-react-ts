@@ -1,0 +1,20 @@
+{
+  "aze": "aze",
+  "tr": "tr",
+  "en": "en",
+  "ru": "ru",
+  "home": "Ana Sayfa",
+  "favorite": "Favori",
+  "watchList": "İzleme Listesi",
+  "startTrial": "Bugün ücretsiz denemenizi başlatın!",
+  "cta": "Bu, kullanıcıları StreamVibe'ın ücretsiz denemesine kaydolmaya teşvik eden açık ve öz bir eylem çağrısıdır.",
+  "startButton": "Ücretsiz Deneme Başlat",
+  "movies": "Filmler",
+  "shows": "Gösteriler",
+  "ourGenres": "Türlerimiz",
+  "ourGenresShows": "Gösteri Türlerimiz",
+  "topRated": "En Yüksek Oy Alanlar",
+  "topRatedShows": "En Yüksek Oy Alan Gösteriler",
+  "popular": "Popüler",
+  "popularShows": "Popüler Gösteriler"
+}

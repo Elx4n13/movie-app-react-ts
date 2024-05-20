@@ -1,0 +1,21 @@
+{
+  "aze": "aze",
+  "tr": "tr",
+  "en": "en",
+  "ru": "ru",
+  "home": "Ana Səhifə",
+  "favorite": "Sevimli",
+  "watchList": "İzləmə Siyahısı",
+  "startTrial": "Bu gün pulsuz sınaq başlayın!",
+  "cta": "Bu, StreamVibe üçün pulsuz sınaq qeydiyyatı üçün istifadəçiləri təşviq edən aydın və qısa bir çağırışdır.",
+  "startButton": "Pulsuz Sınaq Başlayın",
+  "movies": "Filmlər",
+  "shows": "Şoular",
+  "ourGenres": "Janrlarımız",
+  "ourGenresShows": "Şou Janrlarımız",
+  "topRated": "Ən Yüksək Qiymətləndirilmiş",
+  "topRatedShows": "Ən Yüksək Qiymətləndirilmiş Şoular",
+  "popular": "Populyar",
+  "popularShows": "Populyar Şoular",
+  "unkown":"Bilinmir"
+}
