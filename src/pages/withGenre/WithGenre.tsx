@@ -25,6 +25,7 @@ import {
 // Type definition for movie item
 interface MovieItem {
     id: number;
+    name:string;
     poster_path: string | null;
     vote_average: number;
     title: string;
@@ -124,7 +125,7 @@ const WithGenre: React.FC = () => {
                                     className={styles.left}
                                     onClick={() => navigate(`/movie/${item.id}`)}
                                 >
-                                    <p className={styles.title}>{item.title}</p>
+                                    <p className={styles.title}>{item.title||item.name}</p>
                                     <p>{item.release_date}</p>
                                 </div>
                                 <div className={styles.right}>
