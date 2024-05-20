@@ -15,7 +15,7 @@ const Search: React.FC<any> = ({hideNavHamb}) => {
     };
     const img_base_url = "https://image.tmdb.org/t/p/original";
     const notImg = "https://bitsofco.de/content/images/2018/12/Screenshot-2018-12-16-at-21.06.29.png";
-    const { t, i18n } = useTranslation();
+    const {  i18n } = useTranslation();
     const [lang, setLang] = useState<string>(i18n.language); 
     const [search, setSearch] = useState<string>('');
     const [movies, setMovies] = useState<ApiResult[]>([]);
