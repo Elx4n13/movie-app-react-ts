@@ -63,7 +63,7 @@ const Genres: React.FC<SlidersProps> = ({type,title, queryKey, url, params }) =>
   const startIndex = Math.max(0, currentSlide - 1);
   const endIndex = Math.min(genres.length - 1, currentSlide + 1);
   const handleItemClick = (id: number) => {
-    navigate(`/discover/${id}?type=${type}`);
+    navigate(`/discover/${id}?type=${type}&page=1`);
 };
   return (
     <div className="slider-container">

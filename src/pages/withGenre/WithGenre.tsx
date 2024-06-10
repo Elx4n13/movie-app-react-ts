@@ -22,7 +22,6 @@ import {
     addFavoritesHandle,
 } from "../../utils";
 
-// Type definition for movie item
 interface MovieItem {
     id: number;
     name:string;
@@ -64,13 +63,14 @@ const WithGenre: React.FC = () => {
         queryFn: () => fetchApi(`https://api.themoviedb.org/3/discover/${type}`, {
             language: lang,
             with_genres: genreId,
+            page:searchParams.get("page") || '1',
         }),
-        enabled: !!genreId, // Ensure genreId is not null before fetching
+        enabled: !!genreId, 
     });
 
     useEffect(() => {
         refetch();
-    }, [genreId, type, lang, refetch]);
+    }, [genreId, type, lang, refetch,searchParams]);
 
     const { favorites } = useSelector((state: RootState) => state.favorites);
     const watchList = useSelector((state: RootState) => state.watchList.watchList);
@@ -86,7 +86,7 @@ const WithGenre: React.FC = () => {
             <List
                 pagination={{
                     onChange: (page) => {
-                        setSearchParams({ page: `${page}` });
+                        setSearchParams({ type:`${type}`, page: `${page}`});
                     },
                     pageSize: 20,
                     current: parseInt(searchParams.get("page") || '1', 10),
@@ -108,7 +108,7 @@ const WithGenre: React.FC = () => {
                         <div className={styles.cardContainer}>
                             <div
                                 className={styles.top}
-                                onClick={() => navigate(`/movie/${item.id}`)}
+                                onClick={() => navigate(`/movie/${item.id}?type=${type}`)}
                             >
                                 <img
                                     src={item.poster_path ? img_base_url + item.poster_path : notImg}
@@ -123,7 +123,7 @@ const WithGenre: React.FC = () => {
                             <div className={styles.footer}>
                                 <div
                                     className={styles.left}
-                                    onClick={() => navigate(`/movie/${item.id}`)}
+                                    onClick={() => navigate(`/movie/${item.id}?type=${type}`)}
                                 >
                                     <p className={styles.title}>{item.title||item.name}</p>
                                     <p>{item.release_date}</p>

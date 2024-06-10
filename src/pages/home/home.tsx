@@ -23,7 +23,7 @@ export const Home = () => {
   }, [i18n.language]);
   return (
     <div className="homeContainer">
-      <VideoHeader poster="https://image.tmdb.org/t/p/original/obYjrjFT4iZV09YAXu53iBA51Js.jpg" src={video}/>
+      <VideoHeader poster="https://cdn.marvel.com/content/1x/avengersendgame_lob_crd_05.jpg" src={video}/>
       <div className="movies">
         <p className="content-title">{t("movies")}</p>
         <Genres
@@ -47,7 +47,7 @@ export const Home = () => {
           url="https://api.themoviedb.org/3/genre/tv/list"
           params={{ language: lang }}
         />
-        {t("topRatedShows")}
+      
         <MovieList type="tv" title={t("topRatedShows")} queryKey="TopRatedShows" url='https://api.themoviedb.org/3/tv/top_rated' params={{ language: lang, page: '1' }} />
         <MovieList type="tv" title={t("popularShows")} queryKey="PopularShows" url='https://api.themoviedb.org/3/tv/popular' params={{ language: lang, page: '1' }} />
 

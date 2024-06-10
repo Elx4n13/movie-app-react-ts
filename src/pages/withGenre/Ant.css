@@ -11,6 +11,9 @@
 .ant-row > div :nth-of-type(4n) {
   margin-right: 0;
 }
+.ant-pagination-prev,.ant-pagination-next,.ant-pagination-item,.ant-pagination-jump-next,.ant-pagination-jump-prev{
+  background-color: white !important;;
+}
 @media (max-width: 575px) {
   .ant-col {
     justify-content: center;

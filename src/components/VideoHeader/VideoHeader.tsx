@@ -75,7 +75,7 @@ const HoverVideo: React.FC<HoverVideoProps> = ({ src, poster, width, height }) =
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aspernatur. Consectetur molestias voluptatem alias pariatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, aspernatur. Consectetur molestias voluptatem alias pariatur.</p>
         <div className="videoBtns">
           <h4 className="play" onClick={togglePlayPause}>
-             <FaPlay /> Play now
+             <FaPlay /> {isPlaying ? 'Pause now' : 'Play now'}
           </h4>
           <button className='videoPlus'>
             <FaPlus />
